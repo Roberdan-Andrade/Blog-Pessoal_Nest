@@ -11,11 +11,6 @@ export class Tema {
 
     @Transform(({value}: TransformFnParams) => value?.trim())
     @IsNotEmpty()
-    @Column({length: 100, nullable: false})
-    tema: string
-
-    @Transform(({value}: TransformFnParams) => value?.trim())
-    @IsNotEmpty()
     @Column({length: 1000, nullable: false})
     descricao: string
 
