@@ -9,7 +9,7 @@ export class Bcrypt {
         return await bcrypt.hash(senha, saltos);
     }
 
-    async comparaSenhas(senhaDigitada:string, senhaBanco:string): Promise<boolean>{
+    async compararSenhas(senhaDigitada:string, senhaBanco:string): Promise<boolean>{
         return await bcrypt.compare(senhaDigitada, senhaBanco);
     }
 }
